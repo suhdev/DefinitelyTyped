@@ -93,7 +93,7 @@ class MyTextCell extends React.Component<MyCellProps, {}> {
         const {rowIndex, field, myData} = this.props;
 
         return (
-                <Cell {...this.props} className="text-cell">
+                <Cell {...this.props as CellProps} className="text-cell">
                     {myData[rowIndex][field]}
                 </Cell>
             );
